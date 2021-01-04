@@ -23,15 +23,16 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter{
 	@Override
 	public void configure(WebSecurity web) {
 		web.ignoring().requestMatchers(PathRequest.toStaticResources().atCommonLocations());
+		
 	}
 	
 	@Override
 	protected void configure(HttpSecurity http) throws Exception{
-		http.csrf().disable();
+		http.csrf().disable(); 
 		
 		http.authorizeRequests()
 		// "/"의 경우 권한 없어도 접근 가능
-			.antMatchers("/hello").permitAll()
+			.antMatchers("/", "/login").permitAll()
 		//토큰을 활용하는 경우 모든 요청에 대해 접근이 가능하도록 함
 			.anyRequest().authenticated()
 			.and()

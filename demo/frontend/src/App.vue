@@ -27,6 +27,12 @@
 
       <v-spacer></v-spacer>
 
+      <v-btn>
+        LOGIN
+
+      </v-btn>
+      <router-link :to="{ path: '/login'}">Login</router-link>
+
       <v-btn
         href="https://github.com/vuetifyjs/vuetify/releases/latest"
         target="_blank"
@@ -35,26 +41,35 @@
         <span class="mr-2">Latest Release</span>
         <v-icon>mdi-open-in-new</v-icon>
       </v-btn>
+
     </v-app-bar>
 
-    <v-main>
-      <HelloWorld/>
-    </v-main>
+    <v-container>
+      <div>
+        <router-link :to="{ path: '/login'}">Login</router-link>
+      </div>
+      <router-view>
+      </router-view>
+    </v-container>
   </v-app>
 </template>
 
+<!--
 <script>
 import HelloWorld from './components/HelloWorld';
+import Login from './components/Login';
 
 export default {
   name: 'App',
 
   components: {
-    HelloWorld,
+    HelloWorld, Login
   },
 
   data: () => ({
     //
   }),
+
+
 };
-</script>
+</script>-->
