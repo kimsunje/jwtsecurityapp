@@ -27,11 +27,10 @@
 
       <v-spacer></v-spacer>
 
-      <v-btn>
+      <v-btn to="/login">
         LOGIN
 
       </v-btn>
-      <router-link :to="{ path: '/login'}">Login</router-link>
 
       <v-btn
         href="https://github.com/vuetifyjs/vuetify/releases/latest"
@@ -45,31 +44,11 @@
     </v-app-bar>
 
     <v-container>
-      <div>
-        <router-link :to="{ path: '/login'}">Login</router-link>
-      </div>
+
       <router-view>
       </router-view>
     </v-container>
   </v-app>
 </template>
 
-<!--
-<script>
-import HelloWorld from './components/HelloWorld';
-import Login from './components/Login';
 
-export default {
-  name: 'App',
-
-  components: {
-    HelloWorld, Login
-  },
-
-  data: () => ({
-    //
-  }),
-
-
-};
-</script>-->
