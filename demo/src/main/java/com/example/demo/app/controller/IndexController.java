@@ -1,4 +1,4 @@
-package com.example.demo.app.error.controller;
+package com.example.demo.app.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
