@@ -1,11 +1,11 @@
-package com.example.demo.app.user.repository;
+package com.example.demo.app.repository;
 
 import java.util.Optional;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import com.example.demo.app.user.domain.User;
+import com.example.demo.app.domain.User;
 
 // USER 관련 SQL 처리
 @Repository

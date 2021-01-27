@@ -1,4 +1,4 @@
-package com.example.demo.app.user.service;
+package com.example.demo.app.service;
 
 import java.util.Collections;
 
@@ -6,8 +6,8 @@ import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.stereotype.Service;
 
-import com.example.demo.app.user.domain.MyUserDetails;
-import com.example.demo.app.user.repository.UserRepository;
+import com.example.demo.app.domain.MyUserDetails;
+import com.example.demo.app.repository.UserRepository;
 import com.example.demo.exception.UserNotFoundException;
 
 import lombok.RequiredArgsConstructor;

@@ -1,12 +1,12 @@
-package com.example.demo.app.user.service;
+package com.example.demo.app.service;
 
 import java.util.List;
 import java.util.Optional;
 
 import org.springframework.stereotype.Service;
 
-import com.example.demo.app.user.domain.User;
-import com.example.demo.app.user.repository.UserRepository;
+import com.example.demo.app.domain.User;
+import com.example.demo.app.repository.UserRepository;
 
 import lombok.NonNull;
 import lombok.RequiredArgsConstructor;

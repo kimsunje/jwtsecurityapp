@@ -1,4 +1,4 @@
-package com.example.demo.config.security;
+package com.example.demo.config;
 
 import javax.annotation.Resource;
 
@@ -10,7 +10,7 @@ import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
-import com.example.demo.app.user.domain.MyUserDetails;
+import com.example.demo.app.domain.MyUserDetails;
 
 import lombok.RequiredArgsConstructor;
 

@@ -1,4 +1,4 @@
-package com.example.demo.app.user.domain;
+package com.example.demo.app.domain;
 
 import java.util.Collection;
 

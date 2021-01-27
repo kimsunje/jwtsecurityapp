@@ -1,4 +1,4 @@
-package com.example.demo.app.user.controller;
+package com.example.demo.app.controller;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
@@ -8,8 +8,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.demo.app.user.domain.User;
-import com.example.demo.app.user.service.UserService;
+import com.example.demo.app.domain.User;
+import com.example.demo.app.service.UserService;
 import com.example.demo.enums.role.UserRole;
 import com.example.demo.utils.TokenUtils;
 

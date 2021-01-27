@@ -1,4 +1,4 @@
-package com.example.demo.config.security;
+package com.example.demo.config;
 
 import java.io.IOException;
 
@@ -11,7 +11,7 @@ import org.springframework.security.core.Authentication;
 import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
-import com.example.demo.app.user.domain.User;
+import com.example.demo.app.domain.User;
 import com.example.demo.exception.InputNotFoundException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 

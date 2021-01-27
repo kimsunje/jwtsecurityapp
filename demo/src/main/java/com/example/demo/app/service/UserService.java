@@ -1,9 +1,9 @@
-package com.example.demo.app.user.service;
+package com.example.demo.app.service;
 
 import java.util.List;
 import java.util.Optional;
 
-import com.example.demo.app.user.domain.User;
+import com.example.demo.app.domain.User;
 
 public interface UserService {
 

@@ -9,7 +9,7 @@ import java.util.Map;
 import javax.crypto.spec.SecretKeySpec;
 import javax.xml.bind.DatatypeConverter;
 
-import com.example.demo.app.user.domain.User;
+import com.example.demo.app.domain.User;
 import com.example.demo.enums.role.UserRole;
 
 import io.jsonwebtoken.Claims;
