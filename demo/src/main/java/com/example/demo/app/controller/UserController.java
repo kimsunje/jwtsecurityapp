@@ -25,8 +25,11 @@ public class UserController {
 	private final BCryptPasswordEncoder passwordEncoder;
 	private final UserService userService;
 	
-	@PostMapping(value = "signUp")
+	@PostMapping(value = "/signUp")
 	public ResponseEntity signUp(@RequestBody User user) {
+		
+		System.out.println(user.getEmail());
+		System.out.println(user.getPw());
 		
 		user.setRole(UserRole.ROLE_USER);
 		user.setPw(passwordEncoder.encode(user.getPw()));

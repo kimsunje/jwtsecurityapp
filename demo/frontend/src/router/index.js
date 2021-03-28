@@ -14,6 +14,10 @@ const router = new VueRouter({
         {
             path: '/',
             component: () => import('../components/HelloWorld.vue'),
+        },
+        {
+            path: '/signup',
+            component: () => import('../components/SignUp.vue'),
         }
     ]
 })

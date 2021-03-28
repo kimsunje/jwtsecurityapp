@@ -33,7 +33,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter{
 		
 		http.authorizeRequests()
 		// "/"의 경우 권한 없어도 접근 가능
-			.antMatchers("/", "/login").permitAll()
+			.antMatchers("/", "/login", "/user/signUp").permitAll()
 		//토큰을 활용하는 경우 모든 요청에 대해 접근이 가능하도록 함
 			.anyRequest().authenticated()
 			.and()
